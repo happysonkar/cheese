@@ -1,5 +1,5 @@
 from django.contrib import admin
-from cheese.cheeses.models import Cheese
+from .models import Cheese
 
 # Register your models here.
-
+admin.site.register(Cheese)
