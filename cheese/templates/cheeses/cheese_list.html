@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+    {% block title %} Cheese Lists {% endblock title %}
+    {% block content %}
+        <h1>Cheese List</h1>
+        <ul>
+            {% for cheese in cheese_list %}
+                <li><a href="#TODO">{{cheese.name}}</a></li>
+            {% endfor %}
+        </ul>
+    {% endblock content %}
+        

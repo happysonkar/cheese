@@ -6,6 +6,7 @@ from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
 urlpatterns = [
+    path("cheeses/",include("cheese.cheeses.urls",namespace="cheeses")),
     path(
         "",
         TemplateView.as_view(template_name="pages/home.html"),
