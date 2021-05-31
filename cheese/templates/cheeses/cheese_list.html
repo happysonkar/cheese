@@ -7,5 +7,13 @@
                 <li><a href="#TODO">{{cheese.name}}</a></li>
             {% endfor %}
         </ul>
+        <hr/>
+        <p>Don't see a cheese listed here?</p>
+        <p>
+            <a class="btn btn-primary"
+                    href="{%  url 'cheeses:add' %}" role="button">
+                Add Cheese
+            </a>
+        </p> 
     {% endblock content %}
-        
+       
